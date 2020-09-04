@@ -44,32 +44,32 @@
         <h1 class="main__title-h1">Our Services</h1>
         <ul class="main-buttons">
             <li>
-                <button class="main-buttons__services">All</button>
+                <button data-filter="all" class="main-buttons__services">All</button>
             </li>
             <li>
-                <button class="main-buttons__services">CRM</button>
+                <button data-filter="crm" class="main-buttons__services">CRM</button>
             </li>
             <li>
-                <button class="main-buttons__services">Manufacturing</button>
+                <button data-filter="manufacturing" class="main-buttons__services">Manufacturing</button>
             </li>
             <li>
-                <button class="main-buttons__services">Supply Chain</button>
+                <button data-filter="supplychain" class="main-buttons__services">Supply Chain</button>
             </li>
             <li>
-                <button class="main-buttons__services">Financial</button>
+                <button data-filter="financial" class="main-buttons__services">Financial</button>
             </li>
             <li>
-                <button class="main-buttons__services">Project Managment</button>
+                <button data-filter="projectmanag" class="main-buttons__services">Project Managment</button>
             </li>
         </ul>
         <h2 class="main__title">What do you want to search today?</h2>
-        <input class="input" type="text" placeholder="Search...">
+        <input id="search-input" class="input" type="text" placeholder="Search...">
     </section>
     <!-- Categories Carrousel content-->
     <h2 class="categories__title">Categories</h2>
     <section class="carrousel">
         <div class="carrousel__container">
-            <div class="carrousel-item">
+            <div class="carrousel-item" data-item="all">
                 <img class="carrousel-item__img"
                     src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
                     alt="code">
@@ -83,6 +83,78 @@
                     <p class="carrousel-item__details--subtitle">2020 16+ 114 min</p>
                 </div>
             </div>
+            <div class="carrousel-item" data-item="crm">
+                <img class="carrousel-item__img"
+                    src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                    alt="code">
+                <div class="carrousel-item__details">
+                    <div>
+                        <img src="assets/img/icons8-play-96.png" alt="play" />
+                        <img src="assets/img/icons8-plus-96.png" alt="plus" />
+                    </div>
+
+                    <p class="carrousel-item__details--title">Title Descriptive</p>
+                    <p class="carrousel-item__details--subtitle">2020 16+ 114 min</p>
+                </div>
+            </div>
+
+            <div class="carrousel-item" data-item="manufacturing">
+                <img class="carrousel-item__img"
+                    src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                    alt="code">
+                <div class="carrousel-item__details">
+                    <div>
+                        <img src="assets/img/icons8-play-96.png" alt="play" />
+                        <img src="assets/img/icons8-plus-96.png" alt="plus" />
+                    </div>
+
+                    <p class="carrousel-item__details--title">Title Descriptive</p>
+                    <p class="carrousel-item__details--subtitle">2020 16+ 114 min</p>
+                </div>
+            </div>
+            <div class="carrousel-item" data-item="supplychain">
+                <img class="carrousel-item__img"
+                    src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                    alt="code">
+                <div class="carrousel-item__details">
+                    <div>
+                        <img src="assets/img/icons8-play-96.png" alt="play" />
+                        <img src="assets/img/icons8-plus-96.png" alt="plus" />
+                    </div>
+
+                    <p class="carrousel-item__details--title">Title Descriptive</p>
+                    <p class="carrousel-item__details--subtitle">2020 16+ 114 min</p>
+                </div>
+            </div>
+            <div class="carrousel-item" data-item="financial">
+                <img class="carrousel-item__img"
+                    src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                    alt="code">
+                <div class="carrousel-item__details">
+                    <div>
+                        <img src="assets/img/icons8-play-96.png" alt="play" />
+                        <img src="assets/img/icons8-plus-96.png" alt="plus" />
+                    </div>
+
+                    <p class="carrousel-item__details--title">Title Descriptive</p>
+                    <p class="carrousel-item__details--subtitle">2020 16+ 114 min</p>
+                </div>
+            </div>
+            <div class="carrousel-item" data-item="projectmanag">
+                <img class="carrousel-item__img"
+                    src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                    alt="code">
+                <div class="carrousel-item__details">
+                    <div>
+                        <img src="assets/img/icons8-play-96.png" alt="play" />
+                        <img src="assets/img/icons8-plus-96.png" alt="plus" />
+                    </div>
+
+                    <p class="carrousel-item__details--title">Title Descriptive</p>
+                    <p class="carrousel-item__details--subtitle">2020 16+ 114 min</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
