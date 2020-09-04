@@ -11,28 +11,46 @@ the 2 section is the searc filter, whose purpose is o filter the store items by 
 */
 const carrouselItem = document.querySelectorAll(".carrousel-item");
 const buttons = document.querySelectorAll(".main-buttons__services");
+let input = document.getElementById("search-input");
 
 //iterate over the button array for each button when i click it filters
-buttons.forEach(button => { //get the event target
-    button.addEventListener("click", (e) => {
-        e.preventDefault()
-        // get the value wit dataset filter
-        const filterValue = e.target.dataset.filter;
+(function () {
+    buttons.forEach(button => { //get the event target
+        button.addEventListener("click", (e) => {
+            e.preventDefault()
+            // get the value wit dataset filter
+            const filterValue = e.target.dataset.filter;
 
-        carrouselItem.forEach((element) => {
-            if (filterValue === 'all') {
-                element.style.display = 'inline-block';
-            } else {
-                if (element.classList.contains(filterValue)) {
+            carrouselItem.forEach((element) => {
+                if (filterValue === 'all') {
                     element.style.display = 'inline-block';
                 } else {
-                    element.style.display = 'none';
+                    if (element.classList.contains(filterValue)) {
+                        element.style.display = 'inline-block';
+                    } else {
+                        element.style.display = 'none';
+                    }
                 }
+            })
+        })
+    })
+
+})();
+
+(function () {
+    input.addEventListener('keyup', (e) => {
+        console.log(e.target.value);
+        const searchFilter = e.target.value.toLowerCase().trim()
+        carrouselItem.forEach((item) => {
+            if (item.textContent.includes(searchFilter)) {
+                item.style.display = 'inline-block';
+            } else {
+                item.style.display = 'none';
             }
         })
-    });
-});
+    })
 
+})();
 
 
 
