@@ -8,6 +8,7 @@
     <meta name="author" content="Geraldine Hernandez Al-Attrach">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
@@ -73,7 +74,7 @@
     <section class="carrousel">
         <div class="carrousel__container">
             <div class="carrousel-item" data-item="all">
-                <img class="carrousel-item__img"
+                <img class="carrousel-item__img store-img"
                     src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
                     alt="code">
                 <div class="carrousel-item__details">
@@ -86,7 +87,7 @@
                 </div>
             </div>
             <div class="carrousel-item crm" data-item="crm">
-                <img class="carrousel-item__img" src="/assets/img/foto6.jpg" alt="code">
+                <img class="carrousel-item__img store-img" src="/assets/img/foto6.jpg" alt="code">
                 <div class="carrousel-item__details">
                     <div>
                         <i class="fas fa-plus-circle"></i>
@@ -98,7 +99,7 @@
             </div>
 
             <div class="carrousel-item manufacturing" data-item="manufacturing">
-                <img class="carrousel-item__img" src="/assets/img/foto5.jpg" alt="code">
+                <img class="carrousel-item__img store-img" src="/assets/img/foto5.jpg" alt="code">
                 <div class="carrousel-item__details">
                     <div>
                         <i class="fas fa-plus-circle"></i>
@@ -109,7 +110,7 @@
                 </div>
             </div>
             <div class="carrousel-item supplychain" data-item="supplychain">
-                <img class="carrousel-item__img" src="/assets/img/foto4.jpg" alt="code">
+                <img class="carrousel-item__img store-img" src="/assets/img/foto4.jpg" alt="code">
                 <div class="carrousel-item__details">
                     <div>
                         <i class="fas fa-plus-circle"></i>
@@ -120,7 +121,7 @@
                 </div>
             </div>
             <div class="carrousel-item financial" data-item="financial">
-                <img class="carrousel-item__img" src="/assets/img/foto3.jpg" alt="code">
+                <img class="carrousel-item__img store-img" src="/assets/img/foto3.jpg" alt="code">
                 <div class="carrousel-item__details">
                     <div>
                         <i class="fas fa-plus-circle"></i>
@@ -131,7 +132,7 @@
                 </div>
             </div>
             <div class="carrousel-item projectmanag" data-item="projectmanag">
-                <img class="carrousel-item__img" src="/assets/img/foto1.jpg" alt="code">
+                <img class="carrousel-item__img store-img" src="/assets/img/foto1.jpg" alt="code">
                 <div class="carrousel-item__details">
                     <div>
                         <i class="fas fa-plus-circle"></i>
@@ -144,6 +145,22 @@
         </div>
     </section>
 
+    <!-- modal-container -->
+
+    <!-- modal-container -->
+
+    <div class="lightbox-container">
+        <div class="lightbox-holder">
+            <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+            <div class="lightbox-item"></div>
+            <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+            <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+        </div>
+    </div>
+
+
+
+
     <!-- Scroll Bar -->
     <div class="force-overflow" id="style-1"></div>
 
@@ -153,7 +170,9 @@
         <a href="/ ">Privacy</a>
         <a href="/ ">Help</a>
     </footer>
+
     <script src="/js/app.js"></script>
+
 </body>
 
 </html>
