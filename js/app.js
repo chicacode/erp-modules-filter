@@ -72,7 +72,7 @@ let span = document.getElementsByClassName("close")[0];
             let image = e.target.src;
 
             modalItem.style.backgroundImage = `url(${image})`;
-            modalItem.style.width = '90%';
+            modalItem.style.width = '70%';
             modalItem.style.backgroundPosition = 'center';
             modalItem.style.backgroundRepeat = 'no - repeat';
             modalItem.style.backgroundSize = 'cover';
@@ -83,7 +83,7 @@ let span = document.getElementsByClassName("close")[0];
         let btnLeft = document.querySelector('.btnLeft');
         btnLeft.addEventListener('click', function () {
             imageCounter--;
-            if (imageCounter < 0) {
+            if (imageCounter <= 0) {
                 imageCounter = imageList.length - 1;
             }
             modalItem.style.backgroundImage = `url(${imageList[imageCounter]})`
@@ -92,7 +92,7 @@ let span = document.getElementsByClassName("close")[0];
         let btnRight = document.querySelector('.btnRight');
         btnRight.addEventListener('click', function () {
             imageCounter++;
-            if (imageCounter >= imageList.length) {
+            if (imageCounter > imageList.length) {
                 imageCounter = 0;
             }
             modalItem.style.backgroundImage = `url(${imageList[imageCounter]})`;

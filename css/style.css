@@ -224,6 +224,11 @@ li{
     color: #cecece;
     font-size: 25px;
 }
+.lightbox-control:hover{
+    background-color: rgba(0,0,0,0.8);
+    padding: 10px;
+}
+
 /* Modal */
 .lightbox-container{
   display: none; /* Hidden by default */
