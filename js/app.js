@@ -49,7 +49,7 @@ let span = document.getElementsByClassName("close")[0];
     })
 
 })();
-
+// Input Fn
 (function () {
     input.addEventListener('keyup', (e) => {
         console.log(e.target.value);
@@ -64,8 +64,7 @@ let span = document.getElementsByClassName("close")[0];
     })
 
 })();
-
-
+// Modal Fn
 (function () {
     carrouselItem.forEach(function (item) {
         item.addEventListener('click', function (e) {
