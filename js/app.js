@@ -92,8 +92,8 @@ let span = document.getElementsByClassName("close")[0];
         let btnRight = document.querySelector('.btnRight');
         btnRight.addEventListener('click', function () {
             imageCounter++;
-            if (imageCounter > imageList.length) {
-                imageCounter = 0;
+            if (imageCounter > imageList.length - 1) {
+                imageCounter = 1;
             }
             modalItem.style.backgroundImage = `url(${imageList[imageCounter]})`;
         });
