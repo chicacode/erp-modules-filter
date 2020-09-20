@@ -172,7 +172,7 @@ function carritoHTML() {
 
 
     // Recorre el carrito y genera el HTML
-    articulosCarrito.forEach(curso => {
+    cartItems.forEach(curso => {
         const { imagen, titulo, precio, cantidad, id } = curso;
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -188,7 +188,7 @@ function carritoHTML() {
         `;
 
         // Agrega el HTML del carrito en el tbody
-        contenedorCarrito.appendChild(row);
+        cartContent.appendChild(row);
     });
 
 
@@ -197,11 +197,11 @@ function carritoHTML() {
 // Elimina los cursos del tbody
 function limpiarHTML() {
     // Forma lenta
-    // contenedorCarrito.innerHTML = '';
+    // cartContent.innerHTML = '';
 
 
-    while (contenedorCarrito.firstChild) {
-        contenedorCarrito.removeChild(contenedorCarrito.firstChild)
+    while (cartContent.firstChild) {
+        cartContent.removeChild(cartContent.firstChild)
     }
 }
 
