@@ -74,7 +74,32 @@ a {
 a:hover {
     color: gainsboro;
 }
+ul .submenu {
+    position: absolute;
+    right: 20px;
+}
 
+.submenu #cart{
+    display: none;
+}
+.submenu:hover #cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
 .main {
     height: 300px;
     flex-direction: column;
@@ -124,12 +149,27 @@ li{
     width: 50%;
     outline: none;
 }
-.categories__title {
+.cate-products__titles{
+    display: flex;
+}
+.categories__title a, .products__title a {
     color: #24243e;
     font-size: 16px;
     font-weight: bold;
-    position: absolute;
     padding-left: 50px;
+}
+
+.categories__title a:hover, .products__title a:hover{
+    color: #cecece;
+}
+.row-product__section{
+    display: flex;
+    justify-content: space-between;
+}
+.product-img{
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 /* add color to placeholder with pseudoelement */
 ::placeholder {

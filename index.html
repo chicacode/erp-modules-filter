@@ -41,6 +41,30 @@
                     </li>
                 </div>
             </ul>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="assets/img/cart.png" id="img-carrito">
+                        <div id="cart">
+
+                            <table id="cart-list" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href="#" id="empty-cart" class="button u-full-width">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- Main section input -->
@@ -70,9 +94,17 @@
         <input id="search-input" class="input" type="text" placeholder="Search...">
     </section>
     <!-- Categories Carrousel content-->
-    <h2 class="categories__title">Categories</h2>
+    <div class="cate-products__titles">
+        <h2 class="categories__title">
+            <a href="#carru">Categories</a>
+        </h2>
+        <h2 class="products__title">
+            <a href="#list-products">Products</a>
+        </h2>
+    </div>
+
     <section class="carrousel">
-        <div class="carrousel__container">
+        <div id="carru" class="carrousel__container">
             <div class="carrousel-item" data-item="all">
                 <img class="carrousel-item__img store-img"
                     src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
@@ -145,6 +177,72 @@
         </div>
     </section>
 
+    <!-- Products Section -->
+
+    <section class="carrousel">
+        <div id="list-products" class="carrousel__container">
+            <div class="row-product__section">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="assets/img/foto7.jpg" class="product-img">
+                        <div class="info-card">
+                            <h4>Services Manufacturing + Sales</h4>
+                            <p>ERP</p>
+                            <img src="assets/img/estrellas.png">
+                            <p class="precio">$200 <span class="u-pull-right ">$150</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Item added
+                                to the Cart</a>
+                        </div>
+                    </div>
+                    <!--.card-->
+                </div>
+                <div class="four columns">
+                    <div class="card">
+                        <img src="assets/img/foto8.jpg" class="product-img">
+                        <div class="info-card">
+                            <h4>Services CRM + Financial</h4>
+                            <p>ERP</p>
+                            <img src="assets/img/estrellas.png">
+                            <p class="precio">$200 <span class="u-pull-right ">$150</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="2">Item added
+                                to the Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="four columns">
+                    <div class="card">
+                        <img src="assets/img/foto9.jpg" class="product-img">
+                        <div class="info-card">
+                            <h4>Services Employees + RRHH</h4>
+                            <p>ERP</p>
+                            <img src="assets/img/estrellas.png">
+                            <p class="precio">$200 <span class="u-pull-right ">$150</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="3">Item added
+                                to the Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="four columns">
+                    <div class="card">
+                        <img src="assets/img/foto3.jpg" class="product-img">
+                        <div class="info-card">
+                            <h4>Services Supply Chain</h4>
+                            <p>ERP</p>
+                            <img src="assets/img/estrellas.png">
+                            <p class="precio">$200 <span class="u-pull-right ">$150</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="4">Item added
+                                to the Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- modal-container -->
 
     <div class="lightbox-container">
