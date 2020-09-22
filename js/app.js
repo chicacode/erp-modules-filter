@@ -117,9 +117,9 @@ function addProduct(e) {
 
 function deleteItem(e) {
     if (e.target.classList.contains('borrar-curso')) {
-        const cursoId = e.target.getAttribute('data-id');
+        const elementId = e.target.getAttribute('data-id');
 
-        cartItems = cartItems.filter(item => item.id !== cursoId);
+        cartItems = cartItems.filter(item => item.id !== elementId);
 
         cartHTML();
     }
@@ -140,7 +140,7 @@ function readProductData(item) {
     const existe = cartItems.some(item => item.id === infoProduct.id);
     if (existe) {
         // Actualizamos la cantidad
-        const elements = cartItems.map(curso => {
+        const elements = cartItems.map(item => {
             if (item.id === infoProduct.id) {
                 item.cantidad++;
                 return item; // retorna el objeto actualizado
