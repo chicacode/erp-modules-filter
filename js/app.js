@@ -128,7 +128,7 @@ function deleteItem(e) {
 // Lee el contenido del HTML al que le dimos click y extrae la información del curso
 function readProductData(item) {
 
-    const infoCurso = {
+    const infoProduct = {
         imagen: item.querySelector('img').src,
         titulo: item.querySelector('h4').textContent,
         precio: item.querySelector('.precio span').textContent,
