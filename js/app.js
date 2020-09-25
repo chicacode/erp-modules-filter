@@ -104,6 +104,15 @@ loadListeners();
 
 function loadListeners() {
     productList.addEventListener('click', addProduct);
+
+
+    cart.addEventListener('click', deleteItem);
+    // Vaciar el carrito 
+    emptyCartBtn.addEventListener('click', () => {
+        cartItems = []; // reseteamos el arreglo
+
+        cleanHTML(); // Eliminamos todo el HTML
+    })
 }
 
 function addProduct(e) {
@@ -161,15 +170,14 @@ function readProductData(item) {
 
 function cartHTML() {
 
-    // Limpiar el HTML
-    limpiarHTML();
-
+    cleanHTML();
 
     // Recorre el carrito y genera el HTML
     cartItems.forEach(item => {
         const { imagen, titulo, precio, cantidad, id } = item;
         const row = document.createElement('tr');
         row.innerHTML = `
+        
             <td>
                 <img src="${imagen}" width="100">
             </td>
@@ -187,7 +195,7 @@ function cartHTML() {
 
 }
 
-function limpiarHTML() {
+function cleanHTML() {
 
     while (cartContent.firstChild) {
         cartContent.removeChild(cartContent.firstChild)

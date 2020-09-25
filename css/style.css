@@ -29,7 +29,7 @@ body {
     transition: width 2s, height 2s, transform 2s;
 }
 .header__menu {
-    margin-right: 60px;
+    margin-right: 150px;
     margin-top: 20px;
     font-size: 14px;
     font-weight: bold;
@@ -43,7 +43,6 @@ body {
 }
 .header__menu--profile {
     width: 40px;
-    /*   display: flex; */
     align-items: center;
     margin-right: 60px;
 }
@@ -76,7 +75,8 @@ a:hover {
 }
 ul .submenu {
     position: absolute;
-    right: 20px;
+    right: 60px;
+    top: 45px;
 }
 
 .submenu #cart{
@@ -85,20 +85,30 @@ ul .submenu {
 .submenu:hover #cart{
     display: block;
     position: absolute;
-    right:0;
+    right:-20px;
     top:100%;
     z-index: 1;
     background-color: white;
     padding: 20px;
-    min-height: 400px;
-    min-width: 300px;
+    min-height: 300px;
+    min-width: 200px;
+    border-radius: 10px;
 }
 .vacio {
     padding: 10px;
+    margin: 10px;
     background-color: crimson;
     text-align: center;
     border-radius: 10px;
     color: white;
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 .main {
     height: 300px;
@@ -143,7 +153,7 @@ li{
     border: 2px solid #24243e;;
     border-radius: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     height: 40px;
     padding: 0 20px;
     width: 50%;
